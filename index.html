@@ -1,3 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals - Marco Varela. This webpage demonstrates key web development skills such as layout, accessibility, SEO, and JavaScript functionality.">
+    <meta name="author" content="Marco Varela">
+    <meta name="keywords" content="WDD 131, Web Development, Dynamic Web Fundamentals, HTML, CSS, JavaScript, Accessibility, SEO">
+    <title>WDD 131 - Dynamic Web Fundamentals - Marco Varela</title>
+    <link rel="stylesheet" href="styles/base.css">
+    <script src="scripts/getdates.js" defer></script>
+</head>
+<body>
     <!--
         Author: Marco Varela
         File: index.html
@@ -5,26 +18,13 @@
     -->
     
     <!-- Header Section -->
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals - Marco Varela. A webpage showcasing fundamental skills with web development including cards, navigation, and footer information.">
-    <meta name="author" content="Marco Varela">
-    <title>WDD 131 - Dynamic Web Fundamentals - Marco Varela</title>
-    <link rel="stylesheet" href="styles/base.css">
-    <script src="scripts/getdates.js" defer></script>
-</head>
-<body>
-
     <header>
         <h1>WDD 131: Dynamic Web Fundamentals - Marco Varela</h1>
         <nav>
-            <a href="https://www.linkedin.com/in/marco-varela/" target="_blank">LinkedIn</a>
-            <a href="https://byui.instructure.com/" target="_blank">I-Learn</a>
-            <a href="https://www.churchofjesuschrist.org/comeuntochrist/believe/bible/philippians-4-13#:~:text=13%20I%20can%20do%20all%20things%20through%20Christ%20which%20strengtheneth%20me." target="_blank">Scripture</a>
-            <a href="#">Final Project</a>
+            <a href="https://www.linkedin.com" target="_blank" aria-label="LinkedIn Profile">LinkedIn</a>
+            <a href="https://byui.instructure.com/" target="_blank" aria-label="I-Learn Portal">I-Learn</a>
+            <a href="https://www.churchofjesuschrist.org/study/scriptures" target="_blank" aria-label="Scripture Resources">Scripture</a>
+            <a href="#" aria-label="Final Project Page">Final Project</a>
         </nav>
     </header>
     
@@ -37,20 +37,18 @@
                     <h2>About Me</h2>
                     <div class="card-content">
                         <div class="text">
-                            <p>My name is Marco, and I live in Rexburg, Idaho. I was born in Mexico City. I am passionate about web development and software engineering. I enjoy learning, coding, and exploring creative solutions. I am currently working as the Data Analyst Team Lead at BYU-Idaho. In my free time, I love traveling and exploring new cities.</p>
+                            <p>My name is Marco, and I live in Rexburg, Idaho. I am passionate about web development and software engineering. I enjoy learning, coding, and exploring creative solutions. In my free time, I love traveling and exploring nature.</p>
                         </div>
-                        <img src="images/profile.jpg" alt="Marco's Profile Picture" class="profile-img">
+                        <img src="images/profile.jpg" alt="Marco's profile photo" class="profile-img">
                     </div>
                 </section>
                 <section class="card flag-section">
-                    <h2>Mexico City, Mexico</h2>
+                    <h2>Toloria, Madagascar</h2>
                     <div class="card-content">
-                        <img src="images/flag.png" alt="Mexican Flag" class="flag-img">
+                        <img src="images/flag.png" alt="Flag of Madagascar" class="flag-img">
                         <div class="text">
-                            <p>Mexico City, Mexico  
-
-                                Mexico City is one of the largest and most vibrant metropolitan areas in the world. Nestled in the Valley of Mexico at an altitude of over 2,200 meters, it is the capital of Mexico and a cultural hub. Known for its rich history, it was built on the ruins of Tenochtitlán, the ancient capital of the Aztec Empire. Mexico City is famous for its stunning architecture, such as the Metropolitan Cathedral and the Palace of Fine Arts, its traditional food like tacos and tamales, and its iconic landmarks, including Chapultepec Park and the Zócalo, one of the largest city squares in the world.</p>
-                            <p class="caption">Mexican Flag</p>
+                            <p>Madagascar is the 4th largest island in the world, located in the Indian Ocean. It is home to 5% of the world's plant and animal species, with over 80% endemic to the island. Famous for its lemurs, baobab trees, and vanilla.</p>
+                            <p class="caption">Official Flag of Madagascar</p>
                         </div>
                     </div>
                 </section>
@@ -61,11 +59,11 @@
                 <section class="card web-resources">
                     <h2>Web Dev Resources</h2>
                     <ul>
-                        <li><a href="https://dev.to" target="_blank">Dev.to Community</a></li>
-                        <li><a href="https://www.smashingmagazine.com" target="_blank">Smashing Magazine</a></li>
-                        <li><a href="https://css-tricks.com" target="_blank">CSS Tricks</a></li>
-                        <li><a href="https://www.w3schools.com" target="_blank">W3 Schools</a></li>
-                        <li><a href="https://www.udemy.com" target="_blank">Udemy</a></li>
+                        <li><a href="https://dev.to" target="_blank" aria-label="Dev.to Web Development Community">Dev.to Community</a></li>
+                        <li><a href="https://www.smashingmagazine.com" target="_blank" aria-label="Smashing Magazine Articles">Smashing Magazine</a></li>
+                        <li><a href="https://css-tricks.com" target="_blank" aria-label="CSS Tricks Tutorials">CSS Tricks</a></li>
+                        <li><a href="https://www.w3schools.com" target="_blank" aria-label="W3 Schools Tutorials">W3 Schools</a></li>
+                        <li><a href="https://www.udemy.com" target="_blank" aria-label="Udemy Courses">Udemy</a></li>
                     </ul>
                 </section>
             </div>
@@ -74,7 +72,7 @@
 
     <!-- Footer Section -->
     <footer>
-        <p>&copy; <span id="currentyear"></span> Marco Varela • Mexico City </p>
+        <p>&copy; <span id="currentyear"></span> Marco Varela • Madagascar</p>
         <p id="lastModified"></p>
     </footer>
 </body>
