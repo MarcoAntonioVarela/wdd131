@@ -1,0 +1,38 @@
+/* 
+Author: Marco Antonio Varela
+Description: CSS file for "Temple Album" project focusing on larger screen styles. 
+This file enhances the mobile-first design for larger views using media queries.
+*/
+
+nav .menu {
+    display: flex; /* Flexbox for larger views */
+    justify-content: center;
+    gap: 1rem;
+}
+
+.gallery {
+    grid-template-columns: repeat(3, 1fr); /* 3 columns for larger screens */
+    gap: 2rem;
+}
+
+figure img {
+    max-width: 250px; /* Reduce image size for desktop */
+    height: auto;
+    margin: 0 auto; /* Center the images */
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+main {
+    max-width: 1200px; /* Limit width */
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+footer {
+    background-color: #4a148c;
+    color: white;
+    text-align: center;
+    font-size: 0.875rem;
+    padding: 1rem;
+}

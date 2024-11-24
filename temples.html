@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<!-- 
+Author: Marco Antonio Varela
+Description: A responsive "Temple Album" project for WDD131 class. 
+This page dynamically displays temple images with a responsive layout and includes a hamburger menu for navigation in mobile view.
+-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temple Album</title>
+    <link rel="stylesheet" href="styles/temples.css">
+    <link rel="stylesheet" href="styles/temples-large.css">
+    <script src="scripts/temples.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Temple Album</h1>
+        <nav>
+            <button class="hamburger" aria-label="Menu">&#9776;</button>
+            <ul class="menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Old</a></li>
+                <li><a href="#">New</a></li>
+                <li><a href="#">Large</a></li>
+                <li><a href="#">Small</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Home</h2>
+        <div class="gallery">
+            <!-- 9 Temple images with captions -->
+            <figure>
+                <img src="images/temple.png" alt="Rexburg Idaho Temple">
+                <figcaption>Rexburg, Idaho</figcaption>
+            </figure>
+            <figure>
+                <img src="images/temple.png" alt="Rexburg Idaho Temple">
+                <figcaption>Rexburg, Idaho</figcaption>
+            </figure>
+            <figure>
+                <img src="images/temple.png" alt="Rexburg Idaho Temple">
+                <figcaption>Rexburg, Idaho</figcaption>
+            </figure>
+            <figure>
+                <img src="images/temple.png" alt="Rexburg Idaho Temple">
+                <figcaption>Rexburg, Idaho</figcaption>
+            </figure>
+            <figure>
+                <img src="images/temple.png" alt="Rexburg Idaho Temple">
+                <figcaption>Rexburg, Idaho</figcaption>
+            </figure>
+            <figure>
+                <img src="images/temple.png" alt="Rexburg Idaho Temple">
+                <figcaption>Rexburg, Idaho</figcaption>
+            </figure>
+            <figure>
+                <img src="images/temple.png" alt="Rexburg Idaho Temple">
+                <figcaption>Rexburg, Idaho</figcaption>
+            </figure>
+            <figure>
+                <img src="images/temple.png" alt="Rexburg Idaho Temple">
+                <figcaption>Rexburg, Idaho</figcaption>
+            </figure>
+            <figure>
+                <img src="images/temple.png" alt="Rexburg Idaho Temple">
+                <figcaption>Rexburg, Idaho</figcaption>
+            </figure>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; <span id="year"></span> Rubia Magdalena Francesco 🌸 Madagascar</p>
+        <p>Last Modification: <span id="lastModified"></span></p>
+    </footer>
+</body>
+</html>
