@@ -3,56 +3,100 @@ Author: Marco Antonio Varela
 Description: CSS file for "Temple Album" project focusing on larger screen styles.
 */
 
-@media screen and (min-width: 740px) and (min-height: 900px) {
+@media screen and (min-width: 500px) {
+    /* Header layout */
     header {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        padding: 1rem 2rem;
-        background-color: #4a148c;
+        display: flex; /* Use flexbox for layout */
+        flex-direction: row; /* Align header items horizontally */
+        justify-content: space-between; /* Space between title and navigation menu */
+        align-items: center; /* Center items vertically */
+        padding: 1rem 2rem; /* Add padding around the header */
+        background-color: #4a148c; /* Purple background color */
+        box-sizing: border-box; /* Ensure padding doesn't overflow */
+        width: 100%; /* Full width header */
     }
 
     header h1 {
-        font-size: 2rem;
+        font-size: 2rem; /* Large title font size */
         margin: 0;
-        color: white;
+        color: white; /* White text for the title */
+        font-weight: bold; /* Make the title bold */
     }
 
     nav .hamburger {
-        display: none; /* Hide hamburger menu on desktop */
+        display: none; /* Hide hamburger menu on larger screens */
     }
 
     nav .menu {
-        display: flex; /* Inline navigation for desktop */
-        list-style: none;
+        display: flex; /* Horizontal navigation menu */
+        flex-direction: row; /* Align menu items in a row */
+        list-style: none; /* Remove bullet points */
         margin: 0;
         padding: 0;
-        gap: 2rem; /* Space between navigation links */
+        gap: 2rem; /* Space between navigation items */
     }
 
     nav .menu li {
-        margin: 0;
+        margin: 0; /* Remove any default margins */
     }
 
     nav .menu a {
-        color: white;
-        text-decoration: none;
-        font-size: 1rem;
-        padding: 0.5rem;
+        color: white; /* White text for navigation links */
+        text-decoration: none; /* Remove underline */
+        font-size: 1.2rem; /* Adjust font size for readability */
+        font-weight: normal; /* Use normal font weight for links */
+        padding: 0.5rem 1rem; /* Add padding for clickable area */
+        transition: color 0.3s ease, text-decoration 0.3s ease;
     }
 
     nav .menu a:hover {
-        border-bottom: 2px solid white; /* Add underline effect on hover */
+        text-decoration: underline; /* Underline effect on hover */
+        color: #e0e0e0; /* Lighter color for hover state */
     }
 
+    /* Gallery layout */
     .gallery {
-        grid-template-columns: repeat(3, 1fr);
-        gap: 2rem;
+        display: grid; /* Use CSS Grid for gallery */
+        grid-template-columns: repeat(3, 1fr); /* 3 columns in larger view */
+        gap: 2rem; /* Add spacing between grid items */
+        justify-items: center; /* Center items horizontally */
+        width: 90%; /* Ensure gallery width fits within the viewport */
+        margin: 2rem auto; /* Center the gallery horizontally and add spacing */
+    }
+
+    figure {
+        margin: 0; /* Remove default margins for figure */
+        text-align: center; /* Center-align captions */
     }
 
     figure img {
-        max-width: 250px;
-        height: auto;
+        max-width: 250px; /* Restrict image size */
+        height: auto; /* Maintain aspect ratio */
+        border-radius: 10px; /* Add rounded corners */
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); /* Subtle shadow for images */
+    }
+
+    figure figcaption {
+        font-size: 1rem; /* Caption font size */
+        color: #4a148c; /* Caption color to match theme */
+        margin-top: 0.5rem; /* Add spacing above captions */
+    }
+
+    /* Footer layout */
+    footer {
+        background-color: #4a148c; /* Purple background for footer */
+        color: white; /* White text */
+        text-align: center; /* Center text */
+        padding: 1rem; /* Add padding to the footer */
+        font-size: 0.9rem; /* Adjust font size for footer text */
+        margin-top: 2rem; /* Add spacing above footer */
+    }
+
+    footer p {
+        margin: 0.5rem 0; /* Space out footer paragraphs */
+    }
+
+    footer span {
+        font-weight: bold; /* Highlight the year and last modification date */
     }
 }
