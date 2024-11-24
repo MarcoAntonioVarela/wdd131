@@ -18,7 +18,6 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: relative;
 }
 
 header h1 {
@@ -31,18 +30,13 @@ nav .menu {
     list-style: none;
     margin: 0;
     padding: 0;
-    flex-direction: column; /* Stack vertically */
-    background-color: #4a148c;
-    position: absolute;
-    top: 3.5rem; /* Position below header */
-    width: 100%;
-    left: 0;
-    z-index: 1000;
-    text-align: center;
 }
 
 nav .menu.show {
-    display: flex; /* Show the menu when active */
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    text-align: center;
 }
 
 nav .menu li {
@@ -52,10 +46,8 @@ nav .menu li {
 nav .menu a {
     color: white;
     text-decoration: none;
-    padding: 1rem 0;
+    padding: 0.5rem;
     display: block;
-    font-size: 1.2rem;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 nav .hamburger {
