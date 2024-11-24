@@ -1,7 +1,6 @@
 /* 
 Author: Marco Antonio Varela
-Description: CSS file for "Temple Album" project focusing on mobile-first responsive design. 
-This file contains styling for mobile views.
+Description: CSS file for "Temple Album" project focusing on mobile-first responsive design.
 */
 
 body {
@@ -21,11 +20,23 @@ header {
     align-items: center;
 }
 
+header h1 {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
 nav .menu {
     display: none; /* Hidden by default for mobile */
     list-style: none;
     margin: 0;
     padding: 0;
+}
+
+nav .menu.show {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    text-align: center;
 }
 
 nav .menu li {
@@ -58,8 +69,9 @@ main h2 {
 
 .gallery {
     display: grid;
-    grid-template-columns: 1fr; /* 1 column for mobile */
+    grid-template-columns: 1fr; /* Single column for mobile */
     gap: 1rem;
+    justify-items: center;
 }
 
 figure {
@@ -68,7 +80,6 @@ figure {
 }
 
 figure img {
-    width: 100%;
     max-width: 300px; /* Restrict image size for mobile */
     height: auto;
     border-radius: 10px;
