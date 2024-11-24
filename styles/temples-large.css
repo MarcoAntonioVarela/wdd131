@@ -6,9 +6,18 @@ Description: CSS file for "Temple Album" project focusing on larger screen style
 /* Apply this for screens larger than 740px x 900px */
 @media screen and (min-width: 740px) and (min-height: 900px) {
     header {
-        flex-direction: row; /* Align elements side-by-side */
-        justify-content: space-between;
+        display: flex;
+        flex-direction: row; /* Align header items side-by-side */
+        justify-content: space-between; /* Space between title and navigation */
+        align-items: center;
         padding: 0.5rem 2rem;
+        background-color: #4a148c; /* Keep purple background for desktop */
+    }
+
+    header h1 {
+        font-size: 2rem; /* Increase font size for desktop */
+        margin: 0;
+        color: white; /* Ensure title is readable */
     }
 
     nav .hamburger {
@@ -16,11 +25,15 @@ Description: CSS file for "Temple Album" project focusing on larger screen style
     }
 
     nav .menu {
-        display: flex; /* Show navigation menu */
-        gap: 2rem; /* Space between nav items */
+        display: flex; /* Show navigation menu in desktop */
+        gap: 2rem; /* Space out the navigation links */
         list-style: none;
         margin: 0;
         padding: 0;
+    }
+
+    nav .menu li {
+        margin: 0; /* Remove extra margin for desktop links */
     }
 
     nav .menu a {
@@ -32,26 +45,7 @@ Description: CSS file for "Temple Album" project focusing on larger screen style
     }
 
     nav .menu a:hover {
-        background-color: rgba(255, 255, 255, 0.2); /* Add hover effect */
-        border-radius: 5px;
-    }
-
-    .gallery {
-        grid-template-columns: repeat(3, 1fr); /* 3 columns for larger screens */
-        gap: 2rem;
-        justify-items: center;
-    }
-
-    figure img {
-        max-width: 250px; /* Reduce image size for desktop */
-        height: auto;
-        border-radius: 10px;
-        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
-    }
-
-    main {
-        max-width: 1200px; /* Limit width */
-        margin: 0 auto;
-        padding: 2rem;
+        background-color: rgba(255, 255, 255, 0.2); /* Add subtle hover effect */
+        border-radius: 5px; /* Round corners of hover background */
     }
 }
