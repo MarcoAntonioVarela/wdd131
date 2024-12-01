@@ -1,14 +1,13 @@
 <!DOCTYPE html>
-<!-- 
-Author: Marco Antonio Varela
-Description: A responsive "Temple Album" project for WDD131 class. 
-This page dynamically displays temple images with a responsive layout and includes a hamburger menu for mobile views only.
--->
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Temple Album</title>
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals - Marco Varela. Temple gallery Assignment.">
+    <meta name="author" content="Marco Varela">
+    <meta name="keywords" content="WDD 131, Temple, Galery, Web Development, Dynamic Web Fundamentals, HTML, CSS, JavaScript, Accessibility, SEO">
+    <title>WDD 131 - Temple Album - Dynamic Web Fundamentals - Marco Varela</title>
+    <link rel="preload" href="styles/temples.css" as="style">
     <link rel="stylesheet" href="styles/temples.css">
     <link rel="stylesheet" href="styles/temples-large.css">
     <script src="scripts/temples.js" defer></script>
@@ -25,47 +24,45 @@ This page dynamically displays temple images with a responsive layout and includ
                 <li><a href="#">Large</a></li>
                 <li><a href="#">Small</a></li>
             </ul>
-        </nav> 
-        
+        </nav>
     </header>
     <main>
         <h2>Home</h2>
         <div class="gallery">
-            <!-- 9 Temple images with captions -->
             <figure>
-                <img src="images/rexburgtemple.png" alt="Rexburg Idaho Temple">
+                <img src="images/rexburgtemple.jpg" alt="Rexburg Idaho Temple" loading="lazy">
                 <figcaption>Rexburg, Idaho</figcaption>
             </figure>
             <figure>
-                <img src="images/mexicocitytemple.png" alt="Mexico City Temple">
+                <img src="images/mexicocitytemple.jpg" alt="Mexico City Temple" loading="lazy">
                 <figcaption>Mexico City, Mexico</figcaption>
             </figure>
             <figure>
-                <img src="images/hermosillosonoratemple.png" alt="Hermosillo Sonora Temple">
+                <img src="images/hermosillosonoratemple.jpg" alt="Hermosillo Sonora Temple" loading="lazy">
                 <figcaption>Hermosillo Sonora, Mexico</figcaption>
             </figure>
             <figure>
-                <img src="images/meridayucatanmexico.png" alt="Merida Yucatan Temple">
+                <img src="images/meridayucatanmexico.jpg" alt="Merida Yucatan Temple" loading="lazy">
                 <figcaption>Merida Yucatan, Mexico</figcaption>
             </figure>
             <figure>
-                <img src="images/monterreytemple.png" alt="Monterrey Temple">
+                <img src="images/monterreytemple.jpg" alt="Monterrey Temple" loading="lazy">
                 <figcaption>Monterrey, Mexico</figcaption>
             </figure>
             <figure>
-                <img src="images/oaxacatemple.png" alt="Oaxaca Temple">
+                <img src="images/oaxacatemple.jpg" alt="Oaxaca Temple" loading="lazy">
                 <figcaption>Oaxaca, Mexico</figcaption>
             </figure>
             <figure>
-                <img src="images/tuxtlagutierreztemple.png" alt="Tuxtla Gutierrez Temple">
+                <img src="images/tuxtlagutierreztemple.jpg" alt="Tuxtla Gutierrez Temple" loading="lazy">
                 <figcaption>Tuxtla Gutierrez, Mexico</figcaption>
             </figure>
             <figure>
-                <img src="images/guadalajaratemple.png" alt="Guadalajara Temple">
+                <img src="images/guadalajaratemple.jpg" alt="Guadalajara Temple" loading="lazy">
                 <figcaption>Guadalajara, Mexico</figcaption>
             </figure>
             <figure>
-                <img src="images/veracruztemple.png" alt="Veracruz Temple">
+                <img src="images/veracruztemple.jpg" alt="Veracruz Temple" loading="lazy">
                 <figcaption>Veracruz, Mexico</figcaption>
             </figure>
         </div>
