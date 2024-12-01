@@ -3,22 +3,23 @@ Author: Marco Antonio Varela
 Description: CSS file for "Temple Album" project focusing on larger screen styles.
 */
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 720px) {
     /* Header layout */
     header {
         align-items: center;
-        padding: 1rem 2rem;
-        background-color: #4a148c;
-        box-sizing: border-box;
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
+        padding: 1.2rem 2rem;
+        background-color: #006eb6;
+
     }
     
     header h1 {
-        margin: 0;
-        font-size: 2rem;
+        text-align:left ;
+        font-family: "Outfit", serif;
+        font-size: 1.8rem;
+        margin-left: 5rem;
+        margin-top: 2rem;
         color: white;
+        flex:1;
     }
     
     nav .hamburger {
@@ -26,13 +27,13 @@ Description: CSS file for "Temple Album" project focusing on larger screen style
     }
     
     nav .menu {
+        font-family: "Outfit", serif;
         display: flex;
         flex-direction: row;
-        gap: 1.5rem;
+        gap: 20px;
+        justify-content: flex-end;
         list-style: none;
-        margin: 0;
-        padding: 0;
-        align-items: center;
+        
     }
     
     nav .menu li {
@@ -42,7 +43,7 @@ Description: CSS file for "Temple Album" project focusing on larger screen style
     nav .menu a {
         color: white;
         text-decoration: none;
-        font-size: 1.2rem;
+        font-size: 1.5rem;
         font-weight: normal;
         padding: 0.5rem 1rem;
         transition: color 0.3s ease, text-decoration 0.3s ease;
@@ -76,15 +77,11 @@ Description: CSS file for "Temple Album" project focusing on larger screen style
         box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
     }
 
-    figure figcaption {
-        font-size: 1rem;
-        color: #4a148c;
-        margin-top: 0.5rem;
-    }
+
 
     /* Footer layout */
     footer {
-        background-color: #4a148c;
+        background-color: #006eb6;
         color: white;
         text-align: center;
         padding: 1rem;

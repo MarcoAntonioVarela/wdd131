@@ -14,7 +14,7 @@ body {
 
 /* Header Styles */
 header {
-    background-color: #4a148c;
+    background-color: #006eb6;
     color: white;
     padding: 1rem;
     display: flex;
@@ -34,7 +34,7 @@ nav .menu {
     margin: 0;
     padding: 0;
     flex-direction: column;
-    background-color: #4a148c;
+
     position: absolute;
     top: 3.5rem;
     left: 0;
@@ -74,7 +74,7 @@ main {
 
 main h2 {
     text-align: center;
-    color: #4a148c;
+    color: #006eb6;
 }
 
 /* Gallery for Mobile */
