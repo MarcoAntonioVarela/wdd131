@@ -1,0 +1,66 @@
+<!--
+    Author: Marco Varela
+    Description: A visually engaging and informative webpage highlighting key details about Mexico, 
+                 including geographical, demographic, and weather data. The page is styled with responsive design and integrates external resources.
+-->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Country Homepage</title>
+    <meta name="description" content="An informative collection about Mexico">
+    <meta name="author" content="Marco Varela">
+    <link rel="stylesheet" href="styles/place.css">
+    <script src="scripts/place.js" defer></script>
+    <link rel="icon" href="images/profile.webp" type="image/webp">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Mexico</h1>
+        <picture>
+            <source srcset="images/mexicocitypalace.webp" media="(min-width: 768px)">
+            <img class="hero" 
+                 src="images/idependenceangel.webp" 
+                 alt="Photo of the Mexico City Independence Angel"
+                 loading="lazy" width="100" >
+          </picture>
+    </header>
+    <main>
+        <section class="datas">
+            <h2>Data</h2>
+            <ul class="datadetails">
+                <li><span>Area:</span> 1,964,375 km²</li>
+                <li><span>Population:</span>  126,705,138 (as of 2023)</li>
+                <li><span>Capital:</span>  Mexico City</li>
+                <li><span>Languages:</span>  Spanish (official) and 68 indigenous languages</li>
+                <li><span>Currency:</span>  Mexican Peso (MXN)</li>
+                <li><span>Time Zone:</span>  Multiple: UTC-8 to UTC-5</li>
+                <li><span>Calling Code:</span>  +52</li>
+                <li><span>Internet TLD:</span>  .mx</li>
+                
+            </ul>
+        </section>
+        <section class="datas">
+            <h2>Weather</h2>
+            <img src="images/weather_day_sun_icon.svg" alt="Icon of a sun and a cloud illustrating the weather">
+            <ul class="weatherdetails">
+                <li><span>Temperature:</span> 28°C</li>
+                <li><span>Conditions:</span> Sunny</li>
+                <li><span>Wind:</span> 15km/h</li>
+                <li><span>Wind Chill:</span> 25℃ </li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Marco Varela | Mexico</p>
+        <p class="lm">Last Modified: <span id="last-modified"></span></p>
+    </footer>
+</body>
+</html>

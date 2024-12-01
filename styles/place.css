@@ -1,0 +1,368 @@
+
+/*
+    Author: Marco Varela
+    Description: Stylesheet for the Mexico information webpage. Includes typography, responsive layout, 
+                 and color themes using CSS variables for consistency. Provides a structured design 
+                 for both small and large screen devices.
+*/
+
+.poppins-thin {
+    font-family: "Poppins", serif;
+    font-weight: 100;
+    font-style: normal;
+  }
+  
+  .poppins-extralight {
+    font-family: "Poppins", serif;
+    font-weight: 200;
+    font-style: normal;
+  }
+  
+  .poppins-light {
+    font-family: "Poppins", serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  .poppins-regular {
+    font-family: "Poppins", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .poppins-medium {
+    font-family: "Poppins", serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  .poppins-semibold {
+    font-family: "Poppins", serif;
+    font-weight: 600;
+    font-style: normal;
+  }
+  
+  .poppins-bold {
+    font-family: "Poppins", serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .poppins-extrabold {
+    font-family: "Poppins", serif;
+    font-weight: 800;
+    font-style: normal;
+  }
+  
+  .poppins-black {
+    font-family: "Poppins", serif;
+    font-weight: 900;
+    font-style: normal;
+  }
+  
+  .poppins-thin-italic {
+    font-family: "Poppins", serif;
+    font-weight: 100;
+    font-style: italic;
+  }
+  
+  .poppins-extralight-italic {
+    font-family: "Poppins", serif;
+    font-weight: 200;
+    font-style: italic;
+  }
+  
+  .poppins-light-italic {
+    font-family: "Poppins", serif;
+    font-weight: 300;
+    font-style: italic;
+  }
+  
+  .poppins-regular-italic {
+    font-family: "Poppins", serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+  
+  .poppins-medium-italic {
+    font-family: "Poppins", serif;
+    font-weight: 500;
+    font-style: italic;
+  }
+  
+  .poppins-semibold-italic {
+    font-family: "Poppins", serif;
+    font-weight: 600;
+    font-style: italic;
+  }
+  
+  .poppins-bold-italic {
+    font-family: "Poppins", serif;
+    font-weight: 700;
+    font-style: italic;
+  }
+  
+  .poppins-extrabold-italic {
+    font-family: "Poppins", serif;
+    font-weight: 800;
+    font-style: italic;
+  }
+  
+  .poppins-black-italic {
+    font-family: "Poppins", serif;
+    font-weight: 900;
+    font-style: italic;
+  }
+
+
+:root {
+    --primary-color: #004d1a;
+    --secondary-color: #fdfdfd;
+    --accent1-color: #003311;
+    --accent2-color: #006622; 
+    --heading-font: 'Outfit', serif;
+    --paragraph-font: 'Poppins', sans-serif;
+
+    --nav-background-color: #003311; 
+    --nav-link-color: #ffffff;
+    --nav-hover-link-color: #ffffff;
+    --nav-hover-background-color: #006622; 
+    --transparent-boxes-color: rgba(255, 255, 255, 0.785);
+    --transparent-boder-bottom: #0169233c;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.hero img{
+  position: relative;
+}
+
+.hero {
+    
+    width: 100%;
+    border-bottom: solid var(--color1) 0.5rem;
+    position: relative;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: "Outfit", sans-serif;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+   
+}
+
+
+
+header h1{
+    padding: 1rem;
+    text-align: center;
+    background-color: var(--accent1-color);
+    color: var(--secondary-color);
+    position: relative;
+    border-bottom: 30px solid var(--accent2-color);
+}
+
+.datas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-bottom: solid var(--transparent-boder-bottom);
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.datas:last-of-type {
+    border-bottom: transparent;
+
+}
+
+h2 {
+    text-align: center;
+    font-size: 2rem;
+    padding: 10px;
+}
+
+.datas img {
+    width: 8rem;    
+}
+
+.datas span{
+  font-weight: bold;
+  display: grid;
+  grid-column: 1;
+  text-align: right;
+  
+}
+
+li {
+  
+  padding-bottom: 1rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 10px;
+  align-items: center;
+}
+
+.datadetails, .weatherdetails {
+    margin-top: 40px;
+    text-align: left;
+    list-style: none;
+}
+
+
+footer {
+  grid-area: footer; 
+  padding: 10px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  text-align: center;
+  background-color: var(--accent1-color);
+  box-shadow: 0 0 30px gray;
+}
+
+footer p {
+  color: white;
+}
+
+.lm {
+  color: yellow;
+}
+
+.hero{
+  border-bottom: 10px solid var(--accent2-color);
+}
+
+
+@media screen and  (min-width: 768px) {
+    h1  {
+        font-weight: 800;
+        font-size: 5rem;
+    }
+    
+    .datas {
+      background-color: var(--transparent-boxes-color);
+      max-width: 300px;
+      position: absolute;
+      border-bottom: transparent;
+      box-shadow: 0 0 15px gray;
+      display: flex;
+      
+    }
+
+  header, main, footer {
+      margin: 0;
+      padding: 0;
+  }
+
+
+  section {
+    position: absolute;
+    background-color: rgba(256, 256, 256, .8);
+    width: max-content;
+}
+  
+
+
+    .datas span{
+        font-weight: bold;
+    }
+
+    .datas h2{
+            background-color: var(--accent1-color);
+            text-align: left;
+            margin-left: 0.5rem;
+            margin-right: 4rem;
+            padding-left: 2rem;
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+            color: var(--secondary-color);
+            top: 9rem;
+            z-index: 2;
+    }
+
+    
+    
+    .datas:first-of-type {
+        top: 200px;
+        left: 20px;
+    }
+
+    .datas:last-of-type {
+      bottom: 150px;
+        right: 20px; 
+
+    .datas:last-of-type h2::after {
+        content: "⛅";
+        opacity: 0.8;
+        font-size: 2rem;
+        margin-left: 10px;
+        margin-bottom: 20px;
+
+    }
+        
+    h2 {
+        background-color: var(--color2);
+        width: 15rem;
+        color: var(--color3);
+    }
+
+    .datas img {
+        display: none;
+    }
+
+    
+
+    .datadetails, .weatherdetails {
+        margin-top: 10px;
+    }
+    li {
+        padding-bottom: 1rem;
+    }
+    
+    footer {
+      position: relative; 
+      z-index: 1; 
+      padding: 10px;
+      padding-top: 25px;
+      padding-bottom: 25px;
+      text-align: center;
+      background-color: var(--accent1-color);
+      box-shadow: 0 0 30px gray;
+  }
+    
+    footer p {
+      color: white;
+    }
+    
+    .lm {
+      color: yellow;
+    }
+
+    .hero{
+      border-bottom: transparent;
+      position: relative;
+      width: 100%;
+    }
+
+
+    
+
+
+}
+
+
+@media screen and (min-width: 1024px) {
+  .datas:last-of-type{
+    position: absolute;
+    bottom: 0;
+  }
+  
+}
+
+}
