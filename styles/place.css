@@ -295,16 +295,17 @@ footer p {
 
     .datas:last-of-type {
       bottom: 150px;
-        right: 20px; 
-
-    .datas:last-of-type h2::after {
-        content: "⛅";
-        opacity: 0.8;
-        font-size: 2rem;
-        margin-left: 10px;
-        margin-bottom: 20px;
-
-    }
+      right: 20px;
+  }
+  
+  .datas:last-of-type h2::after {
+      content: "⛅";
+      opacity: 0.8;
+      font-size: 2rem;
+      margin-left: 10px;
+      margin-bottom: 20px;
+  }
+  
         
     h2 {
         background-color: var(--color2);
