@@ -1,17 +1,18 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <!--
+<!--
     Author: Marco Varela
     Description: A visually engaging and informative webpage highlighting key details about Mexico, 
                  including geographical, demographic, and weather data. The page is styled with responsive design and integrates external resources.
 -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Country Homepage</title>
     <meta name="description" content="An informative collection about Mexico">
     <meta name="author" content="Marco Varela">
-    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place.css" media="print" onload="this.media='all'">
     <script src="scripts/place.js" defer></script>
     <link rel="icon" href="images/profile.webp" type="image/webp">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -25,9 +26,8 @@
             <source srcset="images/mexicocitypalace.webp" media="(min-width: 768px)">
             <img class="hero" 
                  src="images/idependenceangel.webp" 
-                 alt="Photo of the Mexico City Independence Angel"
-                 loading="lazy" width="100" >
-          </picture>
+                 alt="Photo of the Mexico City Independence Angel">
+        </picture>
     </header>
     <main>
         <section class="datas">
@@ -41,12 +41,13 @@
                 <li><span>Time Zone:</span>  Multiple: UTC-8 to UTC-5</li>
                 <li><span>Calling Code:</span>  +52</li>
                 <li><span>Internet TLD:</span>  .mx</li>
-                
             </ul>
         </section>
         <section class="datas">
             <h2>Weather</h2>
-            <img src="images/weather_day_sun_icon.svg" alt="Icon of a sun and a cloud illustrating the weather">
+            <img src="images/weather_day_sun_icon.svg" 
+                 alt="Icon of a sun and a cloud illustrating the weather" 
+                 width="128" height="128"> <!-- Added width and height -->
             <ul class="weatherdetails">
                 <li><span>Temperature:</span> 28°C</li>
                 <li><span>Conditions:</span> Sunny</li>
