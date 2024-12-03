@@ -1,3 +1,8 @@
+/*
+  Author: Marco Varela
+  Purpose: This CSS file is for the desktop version of my Filtered Temple Album project.
+*/
+
 @media only screen and (min-width:769px){
     .nav-button {
         display: none;

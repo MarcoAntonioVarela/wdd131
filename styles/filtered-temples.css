@@ -1,3 +1,7 @@
+/*
+  Author: Marco Varela
+  Purpose: This CSS file handles the styling for mobile screens in my Filtered Temple Album project.
+*/
 * {
     box-sizing: border-box;
     padding: 0;
@@ -8,10 +12,10 @@
 
 :root{
     --color1: #fef4ea;
-    --fontcolor: #532822;
-    --color2: #ff854a;
-    --color3: #43a574;
-    --color4: #ffD05C;
+    --fontcolor: #0e2e72;
+    --color2: #ff7f50;
+    --color3: #4f9da6;
+    --color4: #ffd700;
 }
 
 body {
@@ -88,7 +92,7 @@ header h1 {
     display: block;
 }
 .navi li a:hover{
-    background-color: #43a574;
+    background-color: #4f9da6;
 }
 
 h2.title {
