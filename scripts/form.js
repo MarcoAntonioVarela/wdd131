@@ -1,3 +1,9 @@
+/*
+Author: Marco Varela
+Description: This JavaScript file handles form functionality for my product review page. I dynamically populate product options, track user reviews, and display the last modified date for the webpage.
+*/
+
+
 document.addEventListener("DOMContentLoaded", () => {
     const lastModified = document.querySelector("#last-modified");
     if (lastModified) {
@@ -6,15 +12,33 @@ document.addEventListener("DOMContentLoaded", () => {
             day: 'numeric', month: 'numeric', year: 'numeric'
         }).format(today);
     }
-
     const products = [
-        { id: "fc-1888", name: "Samsung Galaxy S24 Utra", averagerating: 4.5 },
-        { id: "fc-2050", name: "Dell XPS 14", averagerating: 4.7 },
-        { id: "fs-1987", name: "Iphone 16 Pro Max", averagerating: 3.5 },
-        { id: "ac-2000", name: "Alienware m16", averagerating: 3.9 },
-        { id: "jj-1969", name: "Lenovo Legion 7i", averagerating: 5.0 }
-    ];
-    
+        {
+          id: "fc-1888",
+          name: "flux capacitor",
+          averagerating: 4.5
+        },
+        {
+          id: "fc-2050",
+          name: "power laces",
+          averagerating: 4.7
+        },
+        {
+          id: "fs-1987",
+          name: "time circuits",
+          averagerating: 3.5
+        },
+        {
+          id: "ac-2000",
+          name: "low voltage reactor",
+          averagerating: 3.9
+        },
+        {
+          id: "jj-1969",
+          name: "warp equalizer",
+          averagerating: 5.0
+        }
+      ];
     const productSelect = document.getElementById("product-name");
     
     // Populate the select options dynamically (excluding the placeholder)
