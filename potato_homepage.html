@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Homepage</title>
+    <title>Welcome to Idaho Potatoes</title>
     <script src="scripts/potato_form.js" defer></script>
     <link rel="stylesheet" href="styles/potato_form.css"> 
-    <meta name="description" content="Welcome to Idaho Potato Wonders!">
+    <meta name="description" content="Discover the world of Idaho Potatoes, from history to recipes and sustainability.">
     <meta name="author" content="Marco Varela">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -26,14 +26,54 @@
     </header>
 
     <main>
-        <h1>Welcome to Idaho Potato Wonders!</h1>
-        <p>Learn about Idaho's world-famous potatoes, the different types grown, the companies behind them, and delicious recipes.</p>
-        <img src="https://via.placeholder.com/800x400?text=Idaho+Potato+Field" alt="Idaho Potato Field" loading="lazy">
-        <button id="exploreButton">Explore More</button>
+        <section class="hero">
+            <h1>Welcome to the World of Idaho Potatoes</h1>
+            <p>Discover the history, versatility, and beauty of Idaho's most famous crop.</p>
+            <a href="potato_types.html" class="cta-button">Explore Potato Types</a>
+        </section>
+
+        <section class="about">
+            <h2>Why I Created This Website</h2>
+            <div class="about-container">
+                <img src="https://media.licdn.com/dms/image/v2/D5622AQFBkdr4P8bmyg/feedshare-shrink_800/feedshare-shrink_800/0/1692636953669?e=1736985600&v=beta&t=2MDsr8fJKFdL8-qhGe8VZcLv9KtbjwN4tw_kIuMjskg" 
+                     alt="Marco Varela at Category Partners" class="about-image">
+                <div class="about-text">
+                    <p>In 2023, I had the incredible opportunity to work as a paid Data Analyst intern at <strong>Category Partners, LLC</strong>, located in Idaho Falls, Idaho. This company specializes in category management, consumer research, and analytics for the perishables industry, including Idaho potatoes. During my internship, I learned extensively about:</p>
+                    <ul>
+                        <li>The potato growing and distribution process</li>
+                        <li>Different potato types and their uses</li>
+                        <li>Quantities, destinations, and consumer trends</li>
+                    </ul>
+                    <p>My experience with their comprehensive analytics inspired me to create this website, sharing my passion and knowledge about Idaho potatoes. I hope to showcase the industry's beauty and innovation while celebrating its global impact.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="highlights">
+            <h2>What This Website Offers</h2>
+            <div class="website-links">
+                <div class="link-card">
+                    <h3>Potato Types</h3>
+                    <p>Learn about the many varieties of Idaho potatoes and their uses. <a href="potato_types.html">Explore Potato Types</a></p>
+                </div>
+                <div class="link-card">
+                    <h3>Top Companies</h3>
+                    <p>Discover the leading companies driving Idaho’s potato industry. <a href="potato_companies.html">View Top Companies</a></p>
+                </div>
+                <div class="link-card">
+                    <h3>Gallery</h3>
+                    <p>Browse a collection of stunning potato-related images. <a href="potato_gallery.html">Visit the Gallery</a></p>
+                </div>
+                <div class="link-card">
+                    <h3>Contact</h3>
+                    <p>Reach out with questions, suggestions, or feedback. <a href="potato_contact.html">Contact Us</a></p>
+                </div>
+            </div>
+        </section>
     </main>
 
     <footer>
-        <p>&copy; <span id="year"></span> Marco Varela</p>
+        <p>&copy; <span id="year"></span> Marco Varela | Mexico City </p>
         <p>Last Modification: <span id="lastModified"></span></p>
     </footer>
 </body>
