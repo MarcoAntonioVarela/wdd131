@@ -8,9 +8,22 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        img {
+            display: block;
+            margin: 20px auto;
+        }
+        img[alt*="Mobile"] {
+            width: 300px; /* Smaller size for mobile wireframe */
+        }
+        img[alt*="Desktop"] {
+            width: 800px; /* Consistent width for all desktop wireframes */
+        }
+    </style>
 </head>
 <body>
     <header>
+
         <h1>Project Site Plan: Idaho Potatoes</h1>
     </header>
 
@@ -36,42 +49,59 @@
 
         <section id="color-schema">
             <h2>Color Schema</h2>
-            <p><strong>Primary Color:</strong> #2a7b47 (headers, buttons)</p>
-            <p><strong>Secondary Color:</strong> #d3b88c (accents, highlights)</p>
+            <p><strong>Primary Color:</strong> #2a7b47 (used for headers, buttons, navigation bar background)</p>
+            <p><strong>Secondary Color:</strong> #d3b88c (used for accents, buttons, and hover effects)</p>
         </section>
 
         <section id="typography">
             <h2>Typography</h2>
             <ul>
-                <li><strong>Outfit:</strong> Headings</li>
-                <li><strong>Poppins:</strong> Body text</li>
+                <li><strong>Outfit:</strong> Used for all headings and navigation menus for a modern, clean look.</li>
+                <li><strong>Poppins:</strong> Used for body text to ensure high readability and professionalism.</li>
             </ul>
         </section>
 
         <section id="wireframe">
             <h2>Wireframe</h2>
             <h3>Mobile View</h3>
-            <img src="images/wireframe-mobile.png" alt="Wireframe for Mobile View">
-            <h3>Desktop View</h3>
-            <img src="images/wireframe-desktop.png" alt="Wireframe for Desktop View">
+            <img src="images/homepagemobile.png" alt="Wireframe for Home Page Mobile View">
+            <h3>Desktop Views</h3>
+            <img src="images/homepage.png" alt="Wireframe for Home Page Desktop View">
+            <img src="images/potatotypes.png" alt="Wireframe for Potato Types Desktop View">
+            <img src="images/comapnies.png" alt="Wireframe for Top Companies Desktop View">
+            <img src="images/gallery.png" alt="Wireframe for Gallery Desktop View">
+            <img src="images/contactform.png" alt="Wireframe for Contact Page Desktop View">
         </section>
 
         <section id="testing">
             <h2>Testing</h2>
             <p>Validation performed using:</p>
             <ul>
-                <li>W3C HTML Validator</li>
-                <li>Lighthouse Accessibility and SEO</li>
-                <li>WCAG Color Contrast</li>
+                <li>W3C HTML Validator for markup validation.</li>
+                <li>Lighthouse Accessibility, SEO, and Performance tools for optimization.</li>
+                <li>WCAG Color Contrast tools to ensure accessibility compliance.</li>
             </ul>
         </section>
     </main>
 
     <footer>
-        <p>&copy; <span id="year"></span> Marco Varela, Mexico City</p>
-        <p>Last Modification: <span id="lastModified"></span></p>
+        <footer>
+            <p>&copy; <span id="year"></span> Marco Varela, Mexico City</p>
+            <p>Last updated: <span id="lastModified"></span></p>
+        </footer>
     </footer>
 
-    <script src="scripts/siteplan.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const yearElement = document.getElementById('year');
+            const lastModifiedElement = document.getElementById('lastModified');
+            if (yearElement) {
+                yearElement.textContent = new Date().getFullYear();
+            }
+            if (lastModifiedElement) {
+                lastModifiedElement.textContent = document.lastModified;
+            }
+        });
+    </script>
 </body>
 </html>
