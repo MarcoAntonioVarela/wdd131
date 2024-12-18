@@ -85,3 +85,4 @@ document.addEventListener("DOMContentLoaded", () => {
         contactForm.reset(); // Reset the form after successful submission
     });
 });
+ 
