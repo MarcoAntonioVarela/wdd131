@@ -10,28 +10,36 @@ document.addEventListener("DOMContentLoaded", () => {
         lastModifiedSpan.textContent = document.lastModified;
     }
 
-    // Populate "Reason for Contact" options dynamically
+    // Pre-established arrays for form options
     const reasons = [
         { id: "general-inquiry", label: "General Inquiry" },
         { id: "product-feedback", label: "Product Feedback" },
-        { id: "partnership", label: "Partnership Opportunity" },
-        { id: "other", label: "Other" }
+        { id: "partnership-opportunity", label: "Partnership Opportunity" },
+        { id: "suggestions", label: "Suggestions or Improvements" }
     ];
+
+    const referrals = [
+        "Social Media",
+        "Friend or Family",
+        "Search Engine",
+        "Company Website",
+        "Other"
+    ];
+
+    const ratings = ["★", "★★", "★★★", "★★★★", "★★★★★"];
+
+    // Populate "Reason for Contact" options  dynamically
     const reasonSelect = document.getElementById("reason");
     reasons.forEach(reason => {
         const option = document.createElement("option");
         option.value = reason.id;
         option.textContent = reason.label;
         reasonSelect.appendChild(option);
-    });
+    });     
+
+
 
     // Populate "How did you hear about us?" options dynamically
-    const referrals = [
-        "Social Media",
-        "Friend or Family",
-        "Search Engine",
-        "Other"
-    ];
     const referralOptionsContainer = document.getElementById("referral-options");
     referrals.forEach(referral => {
         const label = document.createElement("label");
@@ -44,19 +52,19 @@ document.addEventListener("DOMContentLoaded", () => {
         referralOptionsContainer.appendChild(label);
     });
 
-    // Dynamically create the rating system
+    // Populate rating options dynamically
     const ratingOptionsContainer = document.getElementById("rating-options");
-    for (let i = 1; i <= 5; i++) {
+    ratings.forEach((rating, index) => {
         const label = document.createElement("label");
         const input = document.createElement("input");
         input.type = "radio";
         input.name = "rating";
-        input.value = i;
-        label.textContent = "★".repeat(i);
-        label.title = `${i} star${i > 1 ? "s" : ""}`;
+        input.value = index + 1; // 1-based rating value
+        label.textContent = rating;
+        label.title = `${index + 1} star${index > 0 ? "s" : ""}`;
         label.prepend(input);
         ratingOptionsContainer.appendChild(label);
-    }
+    });
 
     // Form validation and submission
     const contactForm = document.getElementById("potatoForm");
@@ -77,4 +85,3 @@ document.addEventListener("DOMContentLoaded", () => {
         contactForm.reset(); // Reset the form after successful submission
     });
 });
- 
